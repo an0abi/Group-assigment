@@ -5,12 +5,32 @@
     --header-logo-text: #F9FAF8;
 }
 
+/* fonts */
 .hero-main-text {
     font-size: 48px;
-    font-weight: bold;
-    color: var(--header-logo-text)
+    font-weight: bolder;
+    color: var(--header-logo-text);
 }
 
 .hero-secondary-text {
     font-size: 18px;
+    color: var(--gray);
 }
+
+.header-logo-text {
+    font-size: 24px;
+    color: var(--header-logo-text);
+}
+
+.information-header-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--dark-blue);
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 36px;
+    color: var(--dark-blue);
+}
+/* fonts end */
