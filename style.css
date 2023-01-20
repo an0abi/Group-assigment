@@ -70,6 +70,34 @@ body {
 }
 /* header section end*/
 
+/* article section 2 */
+.section-two{
+    justify-content: space-around;
+    text-align: center;
+}
+
+.section-two-title{
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.section-two-images{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section-two-images img{
+    width: 75px;
+    height: 75px;
+    border: 2px solid var(--light-blue);
+    object-fit: cover;
+    border-radius: 10%;
+ 
+}
+/* article section 2 end */
+
 /* footer section*/
 .footer-container {
     display: flex;
