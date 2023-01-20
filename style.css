@@ -11,10 +11,12 @@
     font-weight: bolder;
     color: var(--white);
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .hero-secondary-text {
     font-size: 18px;
+    font-weight: 400;
     color: var(--grey);
     font-family: 'Roboto', sans-serif;;
 }
@@ -49,10 +51,12 @@ body {
     display: flex;
     background-color: var(--dark-blue);
     text-decoration: none;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: auto;
     height: 3rem;
+    padding: 0 100px;
+    padding-right: 140px;
 }
 
 .header a {
@@ -69,7 +73,7 @@ body {
 
 /* article section 2 */
 .section-two{
-    justify-content: space-around;
+    /* justify-content: space-around; */
     text-align: center;
 }
 
@@ -77,6 +81,7 @@ body {
     font-size: 36px;
     font-weight: 800;
     color: var(--dark-blue);
+    font-family: 'Roboto', sans-serif;
 }
 
 .section-two-images{
@@ -86,8 +91,8 @@ body {
 }
 
 .section-two-images img{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     border: 2px solid var(--light-blue);
     object-fit: cover;
     border-radius: 10%;
@@ -104,10 +109,13 @@ body {
     width: 50%;
     font-family: 'Roboto', sans-serif; 
     text-decoration: none;
-    margin: 30px 30px 50px 220px;
+    /* margin: 30px 30px 50px 220px; */
     border-radius: 5px;
     padding: 20px;
-    line-height: 0.5;
+    /* line-height: 0.5; */
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 /* section 4 end */
 
@@ -115,6 +123,7 @@ body {
     color: var(--grey); 
     font-size: 12px;
     font-weight: 400;
+    margin-right: 20px
 }
 
 .action-text{
@@ -124,27 +133,33 @@ body {
 }
 
 
-section:first-of-type {
+.section-one {
     background-color: var(--dark-blue);
     padding: 100px;
     display: flex;
 }
 
-section:first-of-type img {
-    width: 100%;
+.section-one img {
+    max-width: 400px;
+    max-height: 300px;
 }
 
-section:first-of-type > * {
+.section-one > * {
     flex: 1;
 }
 
 .button {
     background-color: var(--light-blue);
-    padding: 10px;
     border: none;
     border-radius: 10px;
-    padding: 8px 25px;
+    padding: 8px 15px;
     cursor: pointer;
+    width: 100px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -181,3 +196,157 @@ section:first-of-type > * {
 }
 /* footer section end*/
 
+/* phone */
+@media only screen 
+and (max-device-width : 480px) {
+    .header {
+        padding: 20px;
+        font-size: small;
+    }
+
+    .header .header-logo-text{
+        font-size: 20px;
+    }
+
+    .header nav a{
+        font-size: 14px;
+    }
+
+    .header nav {
+        width: 100px;
+    }
+
+    .section-one {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .section-one button {
+        margin: auto;
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .section-one .hero-main-text{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .section-one .hero-secondary-text {
+        font-size: 15px;
+    }
+
+    .section-one figure {
+        width: 100%;
+        align-self: center;
+    }
+
+    .section-one img {
+        max-width: 100%;
+    }
+    
+    .section-two-images {
+        flex-direction: column;
+        /* flex-wrap: wrap;
+        max-height:400px; */
+        align-content: center;
+    }
+
+    .section-two-images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-two-title {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    .section-4 {
+        flex-direction: column;
+    }
+
+
+
+    .section-4 .action-text {
+        margin-bottom: 15px;
+    }
+
+    .section-4 .button2 {
+        font-size: 10px;
+        border-width: 1px;
+        width: 70px;
+    }
+}
+
+/* tablet */
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 800px) {
+    .header {
+        padding: 20px;
+        font-size: small;
+    }
+
+    .header .header-logo-text{
+        font-size: 20px;
+    }
+
+    .header nav a{
+        font-size: 20px;
+    }
+
+    .header nav {
+        width: 200px;
+    }
+
+    .section-one {
+        flex-direction: column;
+    }
+
+    .section-one button {
+        margin: auto;
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .section-one h1.hero-main-text{
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    .section-one figure {
+        width: 100%;
+        align-self: center;
+    }
+
+    .section-one img {
+        max-width: 100%;
+    }
+
+    .section-two-images {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height:400px;
+        align-content: center;
+    }
+
+    .section-4 .signup-text {
+        flex-direction: column;
+    }
+
+    .section-4 div {
+        margin: auto;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-4 .button2 {
+        padding: 6px 10px;
+    }
+}
