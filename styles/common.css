@@ -1,0 +1,159 @@
+
+
+
+/* header section*/
+.header {
+    display: flex;
+    background-color: var(--dark-blue);
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 3rem;
+    padding: 10px 100px;
+    padding-right: 140px;
+}
+
+.header nav {
+    width: 50%;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header a:hover {
+    color: var(--light-blue);
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+/* header section end*/
+
+.hero-main-text {
+    font-size: 3vw;
+    font-weight: bolder;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.hero-secondary-text {
+    font-size: 2vw;
+    font-weight: 400;
+    color: var(--grey);
+    font-family: 'Roboto', sans-serif;;
+}
+
+.header-logo-text {
+    font-size: 24px;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+}
+
+.information-header-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--dark-blue);
+    font-family: 'Roboto', sans-serif;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 36px;
+    color: var(--dark-blue);
+    font-family: 'Roboto', sans-serif;
+}
+
+.blue-announcement * {
+    font-size: large;
+}
+
+.blue-announcement button {
+    min-width: 120px;
+    width: 30px;
+}
+
+/* tablet */
+@media screen 
+and (min-device-width : 481px) 
+and (max-device-width : 800px) {
+    .header {
+        padding: 20px;
+        font-size: small;
+    }
+
+    .header .header-logo-text{
+        font-size: 20px;
+    }
+
+    .header nav a{
+        font-size: 20px;
+    }
+
+    .header nav {
+        width: 300px;
+    }
+    
+    .section-one h1.hero-main-text{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero-secondary-text {
+        font-size: 15px !important ;
+    }
+
+    .blue-announcement {
+        width: 80vw;
+        flex-direction: column;
+    }
+
+}
+
+/* phone */
+@media screen 
+and (max-device-width : 480px) {
+    .header {
+        padding: 20px;
+        font-size: small;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header .header-logo-text{
+        font-size: 20px;
+    }
+
+    .header nav a{
+        font-size: 13px;
+        text-align: right;
+        margin-bottom: 2px;
+    }
+
+    .header nav {
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-secondary-text {
+        font-size: 20px;
+    }
+
+    .section-one .hero-main-text{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .blue-announcement {
+        width: 82vw;
+        flex-direction: column;
+        text-align: center;
+    }
+}

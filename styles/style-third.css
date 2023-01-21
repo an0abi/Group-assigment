@@ -5,8 +5,7 @@
     --white: #F9FAF8;
 }
 
-/* fonts */
-.hero-main-text {
+/* .hero-main-text {
     font-size: 48px;
     font-weight: bolder;
     color: var(--white);
@@ -32,7 +31,7 @@
     font-weight: bolder;
     color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
-}
+} */
 
 .quote-text {
     font-style: italic;
@@ -40,99 +39,40 @@
     color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
 }
-/* fonts end */
 
 body {
     margin: 0px;
 }
 
-/* header section*/
-.header {
-    display: flex;
-    background-color: var(--dark-blue);
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 3rem;
-    padding: 10px 100px;
-    padding-right: 140px;
+.section-two{
+    text-align: center;
 }
 
-.header a {
-    text-decoration: none;
-    font-weight: 300;
-}
-
-.header-links {
-    display: flex;
-    justify-content: space-between;
-    width: 20rem;
-}
-/* header section end*/
-
-/* section one */
-.section-one {
-    background-color: var(--dark-blue);
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-one img {
-    width: 700px;
-    max-height: 400px;
-    padding-top: 25px;
-}
-
-
-
-/* end of section one */
-
-/* section two */
-
-.section-two {
-    width: 60%;
-    margin: auto;
-    margin-top: 50px;
+.section-two-title{
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
 }
 
-.section-two h2 {
-    margin-bottom: 50px;
-}
-
-.section-two a {
-    color: var(--light-blue);
-}
-
-.section-two .page-2-images {
+.section-two-images{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+    justify-content: center
 }
 
-.section-two .page-2-images figure {
-    margin:10px;
-    display: flex;
-    align-items: center;
-    height: 15vw;
-    overflow: hidden;
+.section-two-images img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--light-blue);
+    object-fit: cover;
+    border-radius: 10%;
+ 
 }
 
-.section-two .page-2-images img {
-    width: 100%;
-}
-
-.section-two .page-2-images img:last-of-type {
-    float: right;
-}
-
-
-/* end of section two */
-
-/* section 3 */
-.section-three {
+.section-4 {
     background-color: var(--light-blue);
     align-items: center;
     display: flex;
@@ -140,15 +80,13 @@ body {
     width: 60vw;
     font-family: 'Roboto', sans-serif; 
     text-decoration: none;
-    /* margin: 30px 30px 50px 220px; */
     border-radius: 5px;
     padding: 20px;
-    /* line-height: 0.5; */
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
 }
-/* section 4 end */
+
 
 .signup-text{
     color: var(--grey); 
@@ -161,6 +99,26 @@ body {
     color: var(--white);
     font-size: 12px;
     font-weight: 700;
+}
+
+
+.section-one {
+    background-color: var(--dark-blue);
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.section-one figure {
+    text-align: right;
+}
+
+.section-one img {
+    height: 20vw;
+}
+
+.section-one > * {
+    flex: 1;
 }
 
 .button {
@@ -197,7 +155,7 @@ body {
     font-weight: bold;
 }
 
-/* footer section*/
+
 .footer-container {
     display: flex;
     background-color: var(--dark-blue);
@@ -209,4 +167,57 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-/* footer section end*/
+
+
+
+@media screen 
+and (min-device-width : 481px) 
+and (max-device-width : 800px) { 
+    .section-one {
+        padding: 50px;
+    }
+
+    .section-two .section-two-images img {
+        width: 150px;
+        height: 150px;
+    } 
+
+    .section-two .section-two-images {
+        max-width: 100%;
+    }
+
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-one figure {
+        width: 100%;
+    }
+
+    .section-one img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen 
+and (max-device-width : 480px) {
+    
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .section-one figure {
+        width: 100%;
+    }
+
+    .section-one img {
+        width: 100%;
+        height: auto;
+    }
+}
