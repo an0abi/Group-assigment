@@ -91,6 +91,46 @@ body {
 
 /* end of section one */
 
+/* section two */
+
+.section-two {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-two h2 {
+    margin-bottom: 50px;
+}
+
+.section-two a {
+    color: var(--light-blue);
+}
+
+.section-two .page-2-images {
+    display: flex;
+}
+
+.section-two .page-2-images figure {
+    margin:10px;
+    display: flex;
+    align-items: center;
+    height: 15vw;
+    overflow: hidden;
+}
+
+.section-two .page-2-images img {
+    width: 100%;
+}
+
+.section-two .page-2-images img:last-of-type {
+    float: right;
+}
+
+
+/* end of section two */
+
 /* section 3 */
 .section-three {
     background-color: var(--light-blue);
