@@ -64,6 +64,13 @@ body {
     font-weight: 700;
 }
 
+.review-text{
+    color: black; 
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-right: 150px;;
+}
 
 .section-one {
     background-color: var(--dark-blue);
@@ -96,6 +103,10 @@ body {
     align-self: flex-end;
     margin-right: 20px;
 }
+
+.checked {
+    color: orange;
+  }
 
 .button {
     background-color: var(--light-blue);
