@@ -67,6 +67,7 @@
     font-size: 36px;
     color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
+    font-weight: 100 ;
 }
 
 .blue-announcement * {
