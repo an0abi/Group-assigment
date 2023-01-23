@@ -15,7 +15,7 @@
 }
 
 .header nav {
-    width: 50%;
+    width: 500px;
 }
 
 .header a {
@@ -32,10 +32,12 @@
     justify-content: space-between;
     width: 20rem;
 }
+
+
 /* header section end*/
 
 .hero-main-text {
-    font-size: 3vw;
+    font-size: 48px;
     font-weight: bolder;
     color: var(--white);
     font-family: 'Roboto', sans-serif;
@@ -43,7 +45,7 @@
 }
 
 .hero-secondary-text {
-    font-size: 2vw;
+    font-size: 18px;
     font-weight: 400;
     color: var(--grey);
     font-family: 'Roboto', sans-serif;;
@@ -77,6 +79,44 @@
 .blue-announcement button {
     min-width: 120px;
     width: 30px;
+}
+
+/* blue button */
+.button {
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button1 {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+}
+
+.button2 {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid white;
+    display: inline-block;
+    font-weight: bold;
 }
 
 /* tablet */
