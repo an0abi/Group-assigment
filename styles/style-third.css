@@ -110,11 +110,18 @@ body {
 }
 
 .section-one figure {
-    text-align: right;
+    height: 250px !important;
+    position: relative;
+}   
+
+.section-one figure div {
+    /* position: absolute; */
+    height: 100%;
 }
 
 .section-one img {
-    height: 20vw;
+    height: 100p;
+    /* height: 20vw; */
 }
 
 .section-one > * {

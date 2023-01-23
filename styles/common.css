@@ -33,6 +33,10 @@
     width: 20rem;
 }
 
+figcaption {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* header section end*/
 
@@ -119,6 +123,62 @@
     font-weight: bold;
 }
 
+.hiring-button {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-color: var(--dark-blue);
+    color: white;
+    border: none;
+    /* border-radius: 10px 0 0 0px; */
+    border-radius: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.go-up {
+    position: absolute;
+    left: 10px;
+    height: 30px;
+}
+
+.go-up a {
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 5px;
+}
+
+@media screen 
+and (min-device-width : 801px) {
+    .section-one figure {
+        display: block;
+        min-height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        overflow: hidden;
+    }
+    .section-one figure div {
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        /* width: 100%; */
+        text-align: right;
+    }
+    
+    .section-one figure img {
+        height: 100%;
+        width: unset;   
+    }
+
+} 
+
 /* tablet */
 @media screen 
 and (min-device-width : 481px) 
@@ -154,6 +214,15 @@ and (max-device-width : 800px) {
         flex-direction: column;
     }
 
+    .hiring-button {
+        position: absolute;
+        bottom: 50px;
+    }
+
+    body {
+        position: relative;
+    }
+
 }
 
 /* phone */
@@ -171,9 +240,9 @@ and (max-device-width : 480px) {
     }
 
     .header nav a{
-        font-size: 13px;
+        font-size: 15px;
         text-align: right;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
     }
 
     .header nav {
@@ -196,5 +265,19 @@ and (max-device-width : 480px) {
         width: 82vw;
         flex-direction: column;
         text-align: center;
+    }
+
+    
+    .hiring-button {
+        position: absolute;
+        bottom: 50px;
+    }
+
+    body {
+        position: relative;
+    }
+
+    footer {
+        margin-top: 70px;
     }
 }
